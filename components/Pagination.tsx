@@ -61,7 +61,7 @@ const Pagination: React.FC<PaginationProps> = ({ page, setPage, totalPages, prev
   };
 
   return (
-    <div className="flex justify-between mt-4">
+    <div className="flex justify-between mt-4 pb-10">
       <button onClick={prevPage} disabled={page === 1} className="bg-blue-500 text-white py-2 px-2 disabled:bg-gray-300 disabled:text-gray-700">
         Previous
       </button>
