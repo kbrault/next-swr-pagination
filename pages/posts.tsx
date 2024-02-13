@@ -5,6 +5,7 @@ import Loader from '../components/Loader';
 import FailLoad from '../components/FailLoad';
 import Link from 'next/link';
 import Pagination from '../components/Pagination';
+import Loupe from '../components/Loupe';
 
 interface ApiResponse {
     posts: Post[];
@@ -45,16 +46,16 @@ const Posts: React.FC = () => {
             <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
             <div className="relative">
                 <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                    <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                    </svg>
+                   <Loupe />
                 </div>
-                <input id="default-search" className="block w-full p-2 ps-10  text-gray-900 border border-gray-300  bg-gray-50  mb-2" autoFocus
+                
+                <input id="default-search" className="block w-full p-2 ps-10  text-gray-900 border border-gray-300  bg-gray-50  mb-2"     
+                    autoFocus
                     type="text"
                     value={search}
                     onChange={handleSearchChange}
                     placeholder="Search posts..." />
-                <button onClick={() => setSearch("")} className="rounded-md text-red-600 absolute end-2 top-2 bottom-2 bg-red-100 hover:bg-red-600 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-3 py-1 ">clear</button>
+                <button onClick={() => setSearch("")} className="rounded-md text-red-600 absolute end-2 top-2 bottom-2 bg-red-100 hover:bg-red-600 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-3 py-0.5 ">clear</button>
             </div>
 
             <div className="relative overflow-x-auto">
