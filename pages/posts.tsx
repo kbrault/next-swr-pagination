@@ -107,7 +107,7 @@ const Posts: React.FC = () => {
                 nextPage={nextPage}
                 maxVisiblePages={3} />
 
-            <p className="pb-2 text-lg">Example of React Hooks for Data Fetching "SWR" (stale-while-revalidate)</p>
+            <p className="pb-2 text-lg">Example of React Hooks for Data Fetching &quot;SWR&ldquo; (stale-while-revalidate)</p>
             <p className="pb-2 text-lg">SWR is a HTTP cache invalidation strategy popularized by HTTP RFC 5861. SWR is a strategy to first return the data from cache (stale), then send the fetch request (revalidate), and finally come with the up-to-date data.</p>
             <p className="pb-2 text-lg">Here some technical details :</p>
             <ul className="pl-10 pb-8 max-w-md  text-gray-500 list-disc">
